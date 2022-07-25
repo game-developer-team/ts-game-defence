@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  reactjs:
+    # Dockerfile 위치
+    build: .
+    # Container 이름
+    container_name: dev-webAppAdmin
+    # 최초 한 번 실행 후 재부팅 시 자동 재실행
+    restart: always
+    ports:
+      - 80:80
